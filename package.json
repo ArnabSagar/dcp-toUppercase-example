@@ -1,0 +1,22 @@
+{
+  "name": "dcp-touppercase-example",
+  "version": "1.0.0",
+  "description": "DCP test app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ArnabSagar/dcp-toUppercase-example.git"
+  },
+  "author": "Arnab Sagar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ArnabSagar/dcp-toUppercase-example/issues"
+  },
+  "homepage": "https://github.com/ArnabSagar/dcp-toUppercase-example#readme",
+  "dependencies": {
+    "dcp-client": "^4.2.17"
+  }
+}
