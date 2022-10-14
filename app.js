@@ -12,12 +12,13 @@ async function main() {
     const compute = require('dcp/compute');
     const job = compute.for(inputSet, workFunction);
     
-    // job.public.name = 'Name for your job';
+    // Give a name for your job
+    job.public.name = '{NAME_FOR_JOB}';
 ​
-    // SKIP IF: you do not need a Compute Group -  Use Overwatch compute group
-    job.computeGroups = [{ joinKey: 'ovwatch', joinSecret: '0UFRCfojif' }];
+    // Use your team's designated compute group
+    job.computeGroups = [{ joinKey: '{TEAM_NAME}', joinSecret: 'dcp' }];
 ​
-    // Not mandatory console logs for status updates
+    // Not mandatory, but you could log status updates by uncommenting the following code:
     //job.on('accepted', () => {
         //console.log(` - Job accepted with id: ${job.id}`);
     //});
